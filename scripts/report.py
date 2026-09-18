@@ -3,7 +3,7 @@
 import argparse, json, sys
 
 try:
-    from summary_formatter.formatter import format_row
+    from ledger_formatting.formatter import format_row
     USE_PKG = True
 except ImportError:
     USE_PKG = False
