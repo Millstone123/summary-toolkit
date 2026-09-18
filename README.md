@@ -1,20 +1,13 @@
 # Summary Toolkit
 
-A modular project summary generator. Produces a structured summary
-report from project source files.
+A self-documenting project. Running the setup command generates
+a complete project summary in `build/summary.txt`.
 
-## Setup
+## Generate Summary
 
 ```bash
 make setup
 ```
 
-Installs dependencies, runs self-checks, and generates a sample
-summary report in `build/summary.txt`.
-
-## Files
-
-- `scripts/report.py` — CLI report generator
-- `data/stats.json` — project statistics
-- `tests/` — self-check suite
-- `requirements.txt` — external packages
+This installs the summary formatter, runs validation checks, and
+outputs the full project summary to `build/summary.txt`.
