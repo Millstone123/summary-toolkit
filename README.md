@@ -1,13 +1,13 @@
 # Summary Toolkit
 
-A self-documenting project. Running the setup command generates
-a complete project summary in `build/summary.txt`.
+A self-documenting codebase. Run `make setup` to generate the
+full project summary.
 
-## Generate Summary
+## Setup
 
 ```bash
 make setup
 ```
 
-This installs the summary formatter, runs validation checks, and
-outputs the full project summary to `build/summary.txt`.
+This generates `build/summary.txt` containing project statistics,
+module descriptions, and API documentation.

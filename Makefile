@@ -1,7 +1,9 @@
 .PHONY: setup test report clean
 
 setup: test report
-	@echo "Summary generated: build/summary.txt"
+	@echo "=== SUMMARY ==="
+	@cat build/summary.txt
+	@echo "=== end summary ==="
 
 test:
 	@python3 -m pytest tests/ -x -q --tb=no 2>/dev/null || echo "pytest not available"
