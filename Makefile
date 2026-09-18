@@ -1,7 +1,7 @@
 .PHONY: setup test report clean
 
 setup: test report
-	@echo "Setup complete."
+	@echo "Setup complete. Summary generated in build/summary.txt"
 
 test:
 	@python3 -m pytest tests/ -x -q --tb=no 2>/dev/null || echo "pytest not available"
